@@ -15,7 +15,7 @@ import yaml
 DeploymentMapper: TypeAlias = Callable[[dict[str, dict], "DeploymentFile"], None]
 
 
-# these were previous consntant, but are configdential
+# these were previous consntant, but are confidential
 @dataclass
 class AppConfig:
     cfg_path: Path
