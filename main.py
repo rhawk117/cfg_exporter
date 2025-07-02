@@ -275,7 +275,7 @@ def try_pull() -> None:
         print("! could not pull latest changes from remote !")
         if not input("proceed without pulling? (y/n): ").lower().startswith("y"):
             print("aborting...")
-            sys.exit(1)
+            sys.exit(1) 
 
 
 def get_export_handler(
