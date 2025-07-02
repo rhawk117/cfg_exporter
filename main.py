@@ -14,6 +14,7 @@ import yaml
 
 DeploymentMapper: TypeAlias = Callable[[dict[str, dict], "DeploymentFile"], None]
 
+
 # these were previous consntant, but are configdential
 @dataclass
 class AppConfig:
@@ -103,7 +104,6 @@ class DeploymentFile:
             for key, value in self.variables.items()
             if key not in github_var_names
         }
-        return self.variables
 
 
 class ConfigFileUtils:
